@@ -18,7 +18,7 @@
 		<logger message="Ooops! #[message.inboundProperties['originalFilename']]-#[message.inboundProperties['fileSize']]-#[message.inboundProperties['timestamp']]" level="ERROR" />
 		
 		<idempotent-message-filter idExpression="#[message.inboundProperties['originalFilename']]-#[message.inboundProperties['fileSize']]-#[message.inboundProperties['timestamp']]">
-			<in-memory-store entryTTL="120000" expirationInterval="1800000"/>
+			<simple-text-file-store directory='./idm' />
 		</idempotent-message-filter>
 
 		<file:outbound-endpoint connector-ref="output" path="temp/target"/>
