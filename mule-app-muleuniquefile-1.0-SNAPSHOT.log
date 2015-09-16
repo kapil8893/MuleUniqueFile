@@ -1,34 +1,34 @@
-INFO  2015-09-16 14:58:22,469 [WrapperListener_start_runner] org.mule.module.launcher.application.DefaultMuleApplication: 
+INFO  2015-09-16 17:27:42,082 [WrapperListener_start_runner] org.mule.module.launcher.application.DefaultMuleApplication: 
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 + Initializing app 'muleuniquefile-1.0-SNAPSHOT'           +
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-INFO  2015-09-16 14:58:22,476 [WrapperListener_start_runner] org.mule.lifecycle.AbstractLifecycleManager: Initialising RegistryBroker
-INFO  2015-09-16 14:58:22,484 [WrapperListener_start_runner] org.mule.module.extension.internal.manager.DefaultExtensionManager: Starting discovery of extensions
-INFO  2015-09-16 14:58:22,504 [WrapperListener_start_runner] org.mule.module.extension.internal.manager.DefaultExtensionManager: Discovered 1 extensions
-INFO  2015-09-16 14:58:22,504 [WrapperListener_start_runner] org.mule.module.extension.internal.manager.DefaultExtensionManager: Registering extension validation (version 3.7)
-INFO  2015-09-16 14:58:22,510 [WrapperListener_start_runner] org.mule.config.spring.MuleArtifactContext: Refreshing org.mule.config.spring.MuleArtifactContext@6bff2d87: startup date [Wed Sep 16 14:58:22 IST 2015]; root of context hierarchy
-INFO  2015-09-16 14:58:22,898 [WrapperListener_start_runner] org.mule.config.spring.processors.NoDevkitInjectorProcessor: JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
-INFO  2015-09-16 14:58:23,208 [WrapperListener_start_runner] org.mule.lifecycle.AbstractLifecycleManager: Initialising connector: input
-INFO  2015-09-16 14:58:23,237 [WrapperListener_start_runner] org.mule.lifecycle.AbstractLifecycleManager: Initialising connector: output
-INFO  2015-09-16 14:58:23,252 [WrapperListener_start_runner] org.mule.lifecycle.AbstractLifecycleManager: Initialising model: _muleSystemModel
-INFO  2015-09-16 14:58:23,255 [WrapperListener_start_runner] org.mule.construct.FlowConstructLifecycleManager: Initialising flow: copyFile
-INFO  2015-09-16 14:58:23,255 [WrapperListener_start_runner] org.mule.exception.DefaultMessagingExceptionStrategy: Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@152fda8a
-INFO  2015-09-16 14:58:23,271 [WrapperListener_start_runner] org.mule.processor.SedaStageLifecycleManager: Initialising service: copyFile.stage1
-INFO  2015-09-16 14:58:23,286 [WrapperListener_start_runner] org.mule.util.journal.TransactionJournal: Using files for tx logs C:\MyData\Softwares\mule-standalone-3.7.0\mule-standalone-3.7.0\.\.mule\muleuniquefile-1.0-SNAPSHOT\queue-tx-log\tx1.log and C:\MyData\Softwares\mule-standalone-3.7.0\mule-standalone-3.7.0\.\.mule\muleuniquefile-1.0-SNAPSHOT\queue-tx-log\tx2.log
-INFO  2015-09-16 14:58:23,287 [WrapperListener_start_runner] org.mule.util.journal.TransactionJournal: Using files for tx logs C:\MyData\Softwares\mule-standalone-3.7.0\mule-standalone-3.7.0\.\.mule\muleuniquefile-1.0-SNAPSHOT\queue-xa-tx-log\tx1.log and C:\MyData\Softwares\mule-standalone-3.7.0\mule-standalone-3.7.0\.\.mule\muleuniquefile-1.0-SNAPSHOT\queue-xa-tx-log\tx2.log
-INFO  2015-09-16 14:58:23,319 [WrapperListener_start_runner] org.mule.config.spring.SpringXmlConfigurationBuilder: Configured Mule using "org.mule.config.spring.SpringXmlConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='C:\MyData\Softwares\mule-standalone-3.7.0\mule-standalone-3.7.0\apps\muleuniquefile-1.0-SNAPSHOT\mule-config.xml'}]"
-INFO  2015-09-16 14:58:23,319 [WrapperListener_start_runner] org.mule.config.builders.AutoConfigurationBuilder: Configured Mule using "org.mule.config.builders.AutoConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='C:\MyData\Softwares\mule-standalone-3.7.0\mule-standalone-3.7.0\apps\muleuniquefile-1.0-SNAPSHOT\mule-config.xml'}]"
-INFO  2015-09-16 14:58:23,319 [WrapperListener_start_runner] org.mule.module.launcher.application.DefaultMuleApplication: 
+INFO  2015-09-16 17:27:42,098 [WrapperListener_start_runner] org.mule.lifecycle.AbstractLifecycleManager: Initialising RegistryBroker
+INFO  2015-09-16 17:27:42,113 [WrapperListener_start_runner] org.mule.module.extension.internal.manager.DefaultExtensionManager: Starting discovery of extensions
+INFO  2015-09-16 17:27:42,145 [WrapperListener_start_runner] org.mule.module.extension.internal.manager.DefaultExtensionManager: Discovered 1 extensions
+INFO  2015-09-16 17:27:42,145 [WrapperListener_start_runner] org.mule.module.extension.internal.manager.DefaultExtensionManager: Registering extension validation (version 3.7)
+INFO  2015-09-16 17:27:42,160 [WrapperListener_start_runner] org.mule.config.spring.MuleArtifactContext: Refreshing org.mule.config.spring.MuleArtifactContext@6bff2d87: startup date [Wed Sep 16 17:27:42 IST 2015]; root of context hierarchy
+INFO  2015-09-16 17:27:42,518 [WrapperListener_start_runner] org.mule.config.spring.processors.NoDevkitInjectorProcessor: JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+INFO  2015-09-16 17:27:42,839 [WrapperListener_start_runner] org.mule.lifecycle.AbstractLifecycleManager: Initialising connector: input
+INFO  2015-09-16 17:27:42,882 [WrapperListener_start_runner] org.mule.lifecycle.AbstractLifecycleManager: Initialising connector: output
+INFO  2015-09-16 17:27:42,900 [WrapperListener_start_runner] org.mule.lifecycle.AbstractLifecycleManager: Initialising model: _muleSystemModel
+INFO  2015-09-16 17:27:42,905 [WrapperListener_start_runner] org.mule.construct.FlowConstructLifecycleManager: Initialising flow: copyFile
+INFO  2015-09-16 17:27:42,906 [WrapperListener_start_runner] org.mule.exception.DefaultMessagingExceptionStrategy: Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@26f773ce
+INFO  2015-09-16 17:27:42,932 [WrapperListener_start_runner] org.mule.processor.SedaStageLifecycleManager: Initialising service: copyFile.stage1
+INFO  2015-09-16 17:27:42,950 [WrapperListener_start_runner] org.mule.util.journal.TransactionJournal: Using files for tx logs C:\MyData\Softwares\mule-standalone-3.7.0\mule-standalone-3.7.0\.\.mule\muleuniquefile-1.0-SNAPSHOT\queue-tx-log\tx1.log and C:\MyData\Softwares\mule-standalone-3.7.0\mule-standalone-3.7.0\.\.mule\muleuniquefile-1.0-SNAPSHOT\queue-tx-log\tx2.log
+INFO  2015-09-16 17:27:42,952 [WrapperListener_start_runner] org.mule.util.journal.TransactionJournal: Using files for tx logs C:\MyData\Softwares\mule-standalone-3.7.0\mule-standalone-3.7.0\.\.mule\muleuniquefile-1.0-SNAPSHOT\queue-xa-tx-log\tx1.log and C:\MyData\Softwares\mule-standalone-3.7.0\mule-standalone-3.7.0\.\.mule\muleuniquefile-1.0-SNAPSHOT\queue-xa-tx-log\tx2.log
+INFO  2015-09-16 17:27:43,029 [WrapperListener_start_runner] org.mule.config.spring.SpringXmlConfigurationBuilder: Configured Mule using "org.mule.config.spring.SpringXmlConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='C:\MyData\Softwares\mule-standalone-3.7.0\mule-standalone-3.7.0\apps\muleuniquefile-1.0-SNAPSHOT\mule-config.xml'}]"
+INFO  2015-09-16 17:27:43,031 [WrapperListener_start_runner] org.mule.config.builders.AutoConfigurationBuilder: Configured Mule using "org.mule.config.builders.AutoConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='C:\MyData\Softwares\mule-standalone-3.7.0\mule-standalone-3.7.0\apps\muleuniquefile-1.0-SNAPSHOT\mule-config.xml'}]"
+INFO  2015-09-16 17:27:43,031 [WrapperListener_start_runner] org.mule.module.launcher.application.DefaultMuleApplication: 
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 + Starting app 'muleuniquefile-1.0-SNAPSHOT'               +
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-INFO  2015-09-16 14:58:23,322 [WrapperListener_start_runner] org.mule.util.queue.QueueXaResourceManager: Starting ResourceManager
-INFO  2015-09-16 14:58:23,323 [WrapperListener_start_runner] org.mule.util.queue.QueueXaResourceManager: Started ResourceManager
-INFO  2015-09-16 14:58:23,337 [WrapperListener_start_runner] org.mule.transport.file.FileConnector: Connected: FileConnector
+INFO  2015-09-16 17:27:43,044 [WrapperListener_start_runner] org.mule.util.queue.QueueXaResourceManager: Starting ResourceManager
+INFO  2015-09-16 17:27:43,044 [WrapperListener_start_runner] org.mule.util.queue.QueueXaResourceManager: Started ResourceManager
+INFO  2015-09-16 17:27:43,059 [WrapperListener_start_runner] org.mule.transport.file.FileConnector: Connected: FileConnector
 {
   name=input
   lifecycle=initialise
-  this=33b95b97
+  this=f715fea
   numberOfConcurrentTransactedReceivers=4
   createMultipleTransactedReceivers=true
   connected=true
@@ -36,11 +36,11 @@ INFO  2015-09-16 14:58:23,337 [WrapperListener_start_runner] org.mule.transport.
   serviceOverrides=<none>
 }
 
-INFO  2015-09-16 14:58:23,338 [WrapperListener_start_runner] org.mule.transport.file.FileConnector: Starting: FileConnector
+INFO  2015-09-16 17:27:43,059 [WrapperListener_start_runner] org.mule.transport.file.FileConnector: Starting: FileConnector
 {
   name=input
   lifecycle=initialise
-  this=33b95b97
+  this=f715fea
   numberOfConcurrentTransactedReceivers=4
   createMultipleTransactedReceivers=true
   connected=true
@@ -48,12 +48,12 @@ INFO  2015-09-16 14:58:23,338 [WrapperListener_start_runner] org.mule.transport.
   serviceOverrides=<none>
 }
 
-INFO  2015-09-16 14:58:23,339 [WrapperListener_start_runner] org.mule.lifecycle.AbstractLifecycleManager: Starting connector: input
-INFO  2015-09-16 14:58:23,340 [WrapperListener_start_runner] org.mule.transport.file.FileConnector: Connected: FileConnector
+INFO  2015-09-16 17:27:43,060 [WrapperListener_start_runner] org.mule.lifecycle.AbstractLifecycleManager: Starting connector: input
+INFO  2015-09-16 17:27:43,061 [WrapperListener_start_runner] org.mule.transport.file.FileConnector: Connected: FileConnector
 {
   name=output
   lifecycle=initialise
-  this=1078103b
+  this=15b49abb
   numberOfConcurrentTransactedReceivers=4
   createMultipleTransactedReceivers=true
   connected=true
@@ -61,11 +61,11 @@ INFO  2015-09-16 14:58:23,340 [WrapperListener_start_runner] org.mule.transport.
   serviceOverrides=<none>
 }
 
-INFO  2015-09-16 14:58:23,341 [WrapperListener_start_runner] org.mule.transport.file.FileConnector: Starting: FileConnector
+INFO  2015-09-16 17:27:43,062 [WrapperListener_start_runner] org.mule.transport.file.FileConnector: Starting: FileConnector
 {
   name=output
   lifecycle=initialise
-  this=1078103b
+  this=15b49abb
   numberOfConcurrentTransactedReceivers=4
   createMultipleTransactedReceivers=true
   connected=true
@@ -73,64 +73,66 @@ INFO  2015-09-16 14:58:23,341 [WrapperListener_start_runner] org.mule.transport.
   serviceOverrides=<none>
 }
 
-INFO  2015-09-16 14:58:23,341 [WrapperListener_start_runner] org.mule.lifecycle.AbstractLifecycleManager: Starting connector: output
-INFO  2015-09-16 14:58:23,346 [WrapperListener_start_runner] org.mule.lifecycle.AbstractLifecycleManager: Starting model: _muleSystemModel
-INFO  2015-09-16 14:58:23,348 [WrapperListener_start_runner] org.mule.construct.FlowConstructLifecycleManager: Starting flow: copyFile
-INFO  2015-09-16 14:58:23,349 [WrapperListener_start_runner] org.mule.processor.SedaStageLifecycleManager: Starting service: copyFile.stage1
-INFO  2015-09-16 14:58:23,354 [WrapperListener_start_runner] org.mule.transport.file.FileConnector: Registering listener: copyFile on endpointUri: file://temp/src
-INFO  2015-09-16 14:58:23,415 [WrapperListener_start_runner] org.mule.lifecycle.AbstractLifecycleManager: Initialising: 'null'. Object is: FileMessageReceiver
-INFO  2015-09-16 14:58:23,420 [WrapperListener_start_runner] org.mule.transport.file.FileMessageReceiver: Connecting clusterizable message receiver
-INFO  2015-09-16 14:58:23,422 [WrapperListener_start_runner] org.mule.lifecycle.AbstractLifecycleManager: Starting: 'null'. Object is: FileMessageReceiver
-INFO  2015-09-16 14:58:23,422 [WrapperListener_start_runner] org.mule.transport.file.FileMessageReceiver: Starting clusterizable message receiver
-INFO  2015-09-16 14:58:23,442 [WrapperListener_start_runner] org.mule.module.management.agent.AbstractJmxAgent: Attempting to register service with name: Mule.muleuniquefile-1.0-SNAPSHOT:type=Endpoint,service="copyFile",connector=input,name="endpoint.file.temp.src"
-INFO  2015-09-16 14:58:23,442 [WrapperListener_start_runner] org.mule.module.management.agent.AbstractJmxAgent: Registered Endpoint Service with name: Mule.muleuniquefile-1.0-SNAPSHOT:type=Endpoint,service="copyFile",connector=input,name="endpoint.file.temp.src"
-INFO  2015-09-16 14:58:23,445 [WrapperListener_start_runner] org.mule.module.management.agent.AbstractJmxAgent: Registered Connector Service with name Mule.muleuniquefile-1.0-SNAPSHOT:type=Connector,name="input.1"
-INFO  2015-09-16 14:58:23,446 [WrapperListener_start_runner] org.mule.module.management.agent.AbstractJmxAgent: Registered Connector Service with name Mule.muleuniquefile-1.0-SNAPSHOT:type=Connector,name="output.1"
-INFO  2015-09-16 14:58:23,448 [WrapperListener_start_runner] org.mule.DefaultMuleContext: 
+INFO  2015-09-16 17:27:43,062 [WrapperListener_start_runner] org.mule.lifecycle.AbstractLifecycleManager: Starting connector: output
+INFO  2015-09-16 17:27:43,067 [WrapperListener_start_runner] org.mule.lifecycle.AbstractLifecycleManager: Starting model: _muleSystemModel
+INFO  2015-09-16 17:27:43,070 [WrapperListener_start_runner] org.mule.construct.FlowConstructLifecycleManager: Starting flow: copyFile
+INFO  2015-09-16 17:27:43,071 [WrapperListener_start_runner] org.mule.processor.SedaStageLifecycleManager: Starting service: copyFile.stage1
+INFO  2015-09-16 17:27:43,078 [WrapperListener_start_runner] org.mule.transport.file.FileConnector: Registering listener: copyFile on endpointUri: file://temp/src
+INFO  2015-09-16 17:27:43,124 [WrapperListener_start_runner] org.mule.lifecycle.AbstractLifecycleManager: Initialising: 'null'. Object is: FileMessageReceiver
+INFO  2015-09-16 17:27:43,136 [WrapperListener_start_runner] org.mule.transport.file.FileMessageReceiver: Connecting clusterizable message receiver
+INFO  2015-09-16 17:27:43,137 [WrapperListener_start_runner] org.mule.lifecycle.AbstractLifecycleManager: Starting: 'null'. Object is: FileMessageReceiver
+INFO  2015-09-16 17:27:43,138 [WrapperListener_start_runner] org.mule.transport.file.FileMessageReceiver: Starting clusterizable message receiver
+INFO  2015-09-16 17:27:43,155 [WrapperListener_start_runner] org.mule.module.management.agent.AbstractJmxAgent: Attempting to register service with name: Mule.muleuniquefile-1.0-SNAPSHOT:type=Endpoint,service="copyFile",connector=input,name="endpoint.file.temp.src"
+INFO  2015-09-16 17:27:43,156 [WrapperListener_start_runner] org.mule.module.management.agent.AbstractJmxAgent: Registered Endpoint Service with name: Mule.muleuniquefile-1.0-SNAPSHOT:type=Endpoint,service="copyFile",connector=input,name="endpoint.file.temp.src"
+INFO  2015-09-16 17:27:43,157 [WrapperListener_start_runner] org.mule.module.management.agent.AbstractJmxAgent: Registered Connector Service with name Mule.muleuniquefile-1.0-SNAPSHOT:type=Connector,name="input.1"
+INFO  2015-09-16 17:27:43,158 [WrapperListener_start_runner] org.mule.module.management.agent.AbstractJmxAgent: Registered Connector Service with name Mule.muleuniquefile-1.0-SNAPSHOT:type=Connector,name="output.1"
+INFO  2015-09-16 17:27:43,159 [WrapperListener_start_runner] org.mule.DefaultMuleContext: 
 **********************************************************************
 * Application: muleuniquefile-1.0-SNAPSHOT                           *
 * OS encoding: \, Mule encoding: UTF-8                               *
 *                                                                    *
 * Agents Running:                                                    *
 *   JMX Agent                                                        *
-*   Wrapper Manager: Mule PID #0, Wrapper PID #4608                  *
+*   Wrapper Manager: Mule PID #0, Wrapper PID #4912                  *
 **********************************************************************
-INFO  2015-09-16 15:03:24,448 [[muleuniquefile-1.0-SNAPSHOT].input.receiver.01] org.mule.transport.file.FileMessageReceiver: Lock obtained on file: C:\MyData\Softwares\mule-standalone-3.7.0\mule-standalone-3.7.0\bin\temp\src\TestFile.txt
-ERROR 2015-09-16 15:03:24,524 [[muleuniquefile-1.0-SNAPSHOT].copyFile.stage1.02] org.mule.api.processor.LoggerMessageProcessor: Ooops! TestFile.txt-56-1442395491635
-INFO  2015-09-16 15:03:24,560 [[muleuniquefile-1.0-SNAPSHOT].output.dispatcher.01] org.mule.lifecycle.AbstractLifecycleManager: Initialising: 'output.dispatcher.1970350733'. Object is: FileMessageDispatcher
-INFO  2015-09-16 15:03:24,563 [[muleuniquefile-1.0-SNAPSHOT].output.dispatcher.01] org.mule.lifecycle.AbstractLifecycleManager: Starting: 'output.dispatcher.1970350733'. Object is: FileMessageDispatcher
-INFO  2015-09-16 15:03:24,569 [[muleuniquefile-1.0-SNAPSHOT].output.dispatcher.01] org.mule.transport.file.FileConnector: Writing file to: C:\MyData\Softwares\mule-standalone-3.7.0\mule-standalone-3.7.0\bin\temp\target\TestFile.txt
-INFO  2015-09-16 15:08:24,422 [[muleuniquefile-1.0-SNAPSHOT].input.receiver.01] org.mule.transport.file.FileMessageReceiver: Lock obtained on file: C:\MyData\Softwares\mule-standalone-3.7.0\mule-standalone-3.7.0\bin\temp\src\TestFile.txt
-ERROR 2015-09-16 15:08:24,428 [[muleuniquefile-1.0-SNAPSHOT].copyFile.stage1.03] org.mule.api.processor.LoggerMessageProcessor: Ooops! TestFile.txt-56-1442395491635
-INFO  2015-09-16 15:12:46,275 [WrapperListener_stop_runner] org.mule.module.launcher.application.DefaultMuleApplication: 
+INFO  2015-09-16 17:27:44,166 [[muleuniquefile-1.0-SNAPSHOT].input.receiver.01] org.mule.transport.file.FileMessageReceiver: Lock obtained on file: C:\MyData\Softwares\mule-standalone-3.7.0\mule-standalone-3.7.0\bin\temp\src\testfile1.txt
+ERROR 2015-09-16 17:27:44,248 [[muleuniquefile-1.0-SNAPSHOT].copyFile.stage1.02] org.mule.api.processor.LoggerMessageProcessor: Ooops! testfile1.txt-18-1442403576156
+INFO  2015-09-16 17:27:44,280 [[muleuniquefile-1.0-SNAPSHOT].output.dispatcher.01] org.mule.lifecycle.AbstractLifecycleManager: Initialising: 'output.dispatcher.1321536649'. Object is: FileMessageDispatcher
+INFO  2015-09-16 17:27:44,285 [[muleuniquefile-1.0-SNAPSHOT].output.dispatcher.01] org.mule.lifecycle.AbstractLifecycleManager: Starting: 'output.dispatcher.1321536649'. Object is: FileMessageDispatcher
+INFO  2015-09-16 17:27:44,293 [[muleuniquefile-1.0-SNAPSHOT].output.dispatcher.01] org.mule.transport.file.FileConnector: Writing file to: C:\MyData\Softwares\mule-standalone-3.7.0\mule-standalone-3.7.0\bin\temp\target\testfile1.txt-16-09-15_17-27-44.291
+INFO  2015-09-16 17:32:44,153 [[muleuniquefile-1.0-SNAPSHOT].input.receiver.01] org.mule.transport.file.FileMessageReceiver: Lock obtained on file: C:\MyData\Softwares\mule-standalone-3.7.0\mule-standalone-3.7.0\bin\temp\src\testfile1.txt
+ERROR 2015-09-16 17:32:44,153 [[muleuniquefile-1.0-SNAPSHOT].copyFile.stage1.03] org.mule.api.processor.LoggerMessageProcessor: Ooops! testfile1.txt-18-1442403576156
+INFO  2015-09-16 17:37:44,201 [[muleuniquefile-1.0-SNAPSHOT].input.receiver.01] org.mule.transport.file.FileMessageReceiver: Lock obtained on file: C:\MyData\Softwares\mule-standalone-3.7.0\mule-standalone-3.7.0\bin\temp\src\testfile1.txt
+ERROR 2015-09-16 17:37:44,217 [[muleuniquefile-1.0-SNAPSHOT].copyFile.stage1.04] org.mule.api.processor.LoggerMessageProcessor: Ooops! testfile1.txt-18-1442403576156
+INFO  2015-09-16 17:38:26,220 [WrapperListener_stop_runner] org.mule.module.launcher.application.DefaultMuleApplication: 
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 + Stopping app 'muleuniquefile-1.0-SNAPSHOT'               +
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-INFO  2015-09-16 15:12:46,279 [WrapperListener_stop_runner] org.mule.construct.FlowConstructLifecycleManager: Stopping flow: copyFile
-INFO  2015-09-16 15:12:46,280 [WrapperListener_stop_runner] org.mule.transport.file.FileConnector: Removing listener on endpointUri: file://temp/src
-INFO  2015-09-16 15:12:46,282 [WrapperListener_stop_runner] org.mule.lifecycle.AbstractLifecycleManager: Stopping: 'null'. Object is: FileMessageReceiver
-INFO  2015-09-16 15:12:46,284 [WrapperListener_stop_runner] org.mule.lifecycle.AbstractLifecycleManager: Disposing: 'null'. Object is: FileMessageReceiver
-INFO  2015-09-16 15:12:46,287 [WrapperListener_stop_runner] org.mule.processor.SedaStageLifecycleManager: Stopping service: copyFile.stage1
-INFO  2015-09-16 15:12:46,440 [WrapperListener_stop_runner] org.mule.lifecycle.AbstractLifecycleManager: Stopping model: _muleSystemModel
-INFO  2015-09-16 15:12:46,445 [WrapperListener_stop_runner] org.mule.lifecycle.AbstractLifecycleManager: Stopping connector: input
-INFO  2015-09-16 15:12:46,449 [WrapperListener_stop_runner] org.mule.lifecycle.AbstractLifecycleManager: Stopping connector: output
-INFO  2015-09-16 15:12:46,455 [WrapperListener_stop_runner] org.mule.lifecycle.AbstractLifecycleManager: Stopping: 'output.dispatcher.1970350733'. Object is: FileMessageDispatcher
-INFO  2015-09-16 15:12:46,456 [WrapperListener_stop_runner] org.mule.lifecycle.AbstractLifecycleManager: Disposing: 'output.dispatcher.1970350733'. Object is: FileMessageDispatcher
-INFO  2015-09-16 15:12:46,460 [WrapperListener_stop_runner] org.mule.util.queue.QueueXaResourceManager: Stopping ResourceManager
-INFO  2015-09-16 15:12:46,460 [WrapperListener_stop_runner] org.mule.util.queue.QueueXaResourceManager: Stopped ResourceManager
-INFO  2015-09-16 15:12:46,466 [WrapperListener_stop_runner] org.mule.module.launcher.application.DefaultMuleApplication: 
+INFO  2015-09-16 17:38:26,220 [WrapperListener_stop_runner] org.mule.construct.FlowConstructLifecycleManager: Stopping flow: copyFile
+INFO  2015-09-16 17:38:26,220 [WrapperListener_stop_runner] org.mule.transport.file.FileConnector: Removing listener on endpointUri: file://temp/src
+INFO  2015-09-16 17:38:26,220 [WrapperListener_stop_runner] org.mule.lifecycle.AbstractLifecycleManager: Stopping: 'null'. Object is: FileMessageReceiver
+INFO  2015-09-16 17:38:26,236 [WrapperListener_stop_runner] org.mule.lifecycle.AbstractLifecycleManager: Disposing: 'null'. Object is: FileMessageReceiver
+INFO  2015-09-16 17:38:26,236 [WrapperListener_stop_runner] org.mule.processor.SedaStageLifecycleManager: Stopping service: copyFile.stage1
+INFO  2015-09-16 17:38:26,423 [WrapperListener_stop_runner] org.mule.lifecycle.AbstractLifecycleManager: Stopping model: _muleSystemModel
+INFO  2015-09-16 17:38:26,423 [WrapperListener_stop_runner] org.mule.lifecycle.AbstractLifecycleManager: Stopping connector: input
+INFO  2015-09-16 17:38:26,439 [WrapperListener_stop_runner] org.mule.lifecycle.AbstractLifecycleManager: Stopping connector: output
+INFO  2015-09-16 17:38:26,439 [WrapperListener_stop_runner] org.mule.lifecycle.AbstractLifecycleManager: Stopping: 'output.dispatcher.1321536649'. Object is: FileMessageDispatcher
+INFO  2015-09-16 17:38:26,439 [WrapperListener_stop_runner] org.mule.lifecycle.AbstractLifecycleManager: Disposing: 'output.dispatcher.1321536649'. Object is: FileMessageDispatcher
+INFO  2015-09-16 17:38:26,439 [WrapperListener_stop_runner] org.mule.util.queue.QueueXaResourceManager: Stopping ResourceManager
+INFO  2015-09-16 17:38:26,439 [WrapperListener_stop_runner] org.mule.util.queue.QueueXaResourceManager: Stopped ResourceManager
+INFO  2015-09-16 17:38:26,455 [WrapperListener_stop_runner] org.mule.module.launcher.application.DefaultMuleApplication: 
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 + Disposing app 'muleuniquefile-1.0-SNAPSHOT'              +
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-INFO  2015-09-16 15:12:46,467 [WrapperListener_stop_runner] org.mule.lifecycle.AbstractLifecycleManager: Disposing RegistryBroker
-INFO  2015-09-16 15:12:46,469 [WrapperListener_stop_runner] org.mule.construct.FlowConstructLifecycleManager: Disposing flow: copyFile
-INFO  2015-09-16 15:12:46,471 [WrapperListener_stop_runner] org.mule.processor.SedaStageLifecycleManager: Disposing service: copyFile.stage1
-INFO  2015-09-16 15:12:46,475 [WrapperListener_stop_runner] org.mule.lifecycle.AbstractLifecycleManager: Disposing model: _muleSystemModel
-INFO  2015-09-16 15:12:46,479 [WrapperListener_stop_runner] org.mule.transport.file.FileConnector: Disconnected: FileConnector
+INFO  2015-09-16 17:38:26,455 [WrapperListener_stop_runner] org.mule.lifecycle.AbstractLifecycleManager: Disposing RegistryBroker
+INFO  2015-09-16 17:38:26,470 [WrapperListener_stop_runner] org.mule.construct.FlowConstructLifecycleManager: Disposing flow: copyFile
+INFO  2015-09-16 17:38:26,470 [WrapperListener_stop_runner] org.mule.processor.SedaStageLifecycleManager: Disposing service: copyFile.stage1
+INFO  2015-09-16 17:38:26,486 [WrapperListener_stop_runner] org.mule.lifecycle.AbstractLifecycleManager: Disposing model: _muleSystemModel
+INFO  2015-09-16 17:38:26,486 [WrapperListener_stop_runner] org.mule.transport.file.FileConnector: Disconnected: FileConnector
 {
   name=input
   lifecycle=stop
-  this=33b95b97
+  this=f715fea
   numberOfConcurrentTransactedReceivers=4
   createMultipleTransactedReceivers=true
   connected=true
@@ -138,12 +140,12 @@ INFO  2015-09-16 15:12:46,479 [WrapperListener_stop_runner] org.mule.transport.f
   serviceOverrides=<none>
 }
 
-INFO  2015-09-16 15:12:46,481 [WrapperListener_stop_runner] org.mule.lifecycle.AbstractLifecycleManager: Disposing connector: input
-INFO  2015-09-16 15:12:46,484 [WrapperListener_stop_runner] org.mule.transport.file.FileConnector: Disconnected: FileConnector
+INFO  2015-09-16 17:38:26,501 [WrapperListener_stop_runner] org.mule.lifecycle.AbstractLifecycleManager: Disposing connector: input
+INFO  2015-09-16 17:38:26,501 [WrapperListener_stop_runner] org.mule.transport.file.FileConnector: Disconnected: FileConnector
 {
   name=output
   lifecycle=stop
-  this=1078103b
+  this=15b49abb
   numberOfConcurrentTransactedReceivers=4
   createMultipleTransactedReceivers=true
   connected=true
@@ -151,11 +153,11 @@ INFO  2015-09-16 15:12:46,484 [WrapperListener_stop_runner] org.mule.transport.f
   serviceOverrides=<none>
 }
 
-INFO  2015-09-16 15:12:46,485 [WrapperListener_stop_runner] org.mule.lifecycle.AbstractLifecycleManager: Disposing connector: output
-INFO  2015-09-16 15:12:46,594 [WrapperListener_stop_runner] org.mule.config.spring.MuleArtifactContext: Closing org.mule.config.spring.MuleArtifactContext@6bff2d87: startup date [Wed Sep 16 14:58:22 IST 2015]; root of context hierarchy
-INFO  2015-09-16 15:12:46,778 [WrapperListener_stop_runner] org.mule.DefaultMuleContext: 
+INFO  2015-09-16 17:38:26,501 [WrapperListener_stop_runner] org.mule.lifecycle.AbstractLifecycleManager: Disposing connector: output
+INFO  2015-09-16 17:38:26,645 [WrapperListener_stop_runner] org.mule.config.spring.MuleArtifactContext: Closing org.mule.config.spring.MuleArtifactContext@6bff2d87: startup date [Wed Sep 16 17:27:42 IST 2015]; root of context hierarchy
+INFO  2015-09-16 17:38:26,754 [WrapperListener_stop_runner] org.mule.DefaultMuleContext: 
 **********************************************************************
 * Application "muleuniquefile-1.0-SNAPSHOT" shut down normally on:   *
-* 9/16/15 3:12 PM                                                    *
-* Up for: 0 days, 0 hours, 14 mins, 23.456 sec                       *
+* 9/16/15 5:38 PM                                                    *
+* Up for: 0 days, 0 hours, 10 mins, 43.722 sec                       *
 **********************************************************************
