@@ -2,16 +2,15 @@ package org.mule.application.muleuniquefile;
 
 import java.io.File;
 import java.io.FileWriter;
+import java.io.FilenameFilter;
 import java.io.IOException;
 
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 
-import static org.hamcrest.CoreMatchers.*;
-
 public class VerifyUniqueTest {
-	private static final String rootPath = "C://MyData//Softwares//mule-standalone-3.7.0//mule-standalone-3.7.0//bin//temp//";
+	private static final String ROOT_PATH = "C://MyData//Softwares//mule-standalone-3.7.0//mule-standalone-3.7.0//bin//temp//";
 
 	@Before
 	public void writeFileToSource() {
@@ -19,7 +18,7 @@ public class VerifyUniqueTest {
 		// create a new file and write it to source location
 		FileWriter writer = null;
 		try {
-			writer = new FileWriter(new File(rootPath + "src//testfile1.txt"));
+			writer = new FileWriter(new File(ROOT_PATH + "src//testfile1.txt"));
 			writer.write("This is first line");
 			writer.flush();
 		} catch (IOException e) {
@@ -48,12 +47,17 @@ public class VerifyUniqueTest {
 			e.printStackTrace();
 		}
 
-		File f = new File(rootPath + "target//testfile1.txt");
+		File f = new File(ROOT_PATH + "target");
 
-		Long systime = new Long(System.currentTimeMillis() / 60000);
-		Long fileModifiedTime = new Long(f.lastModified() / 60000);
+		String arr[] = f.list(new FilenameFilter() {
 
-		Assert.assertThat(systime, is(not(fileModifiedTime)));
+			public boolean accept(File dir, String name) {
+				// TODO Auto-generated method stub
+				return name.startsWith("testfile1.txt");
+			}
+		});
+
+		Assert.assertEquals("Array Length should be 1", 1, arr.length);
 
 	}
 }

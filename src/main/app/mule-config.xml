@@ -21,7 +21,7 @@
 			<simple-text-file-store directory='./idm' />
 		</idempotent-message-filter>
 
-		<file:outbound-endpoint connector-ref="output" path="temp/target"/>
+		<file:outbound-endpoint connector-ref="output" path="temp/target" outputPattern="#[message.inboundProperties['originalFilename']]-#[function:datestamp]" />
 	</flow>
 	
 </mule>
