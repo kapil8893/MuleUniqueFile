@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mule xmlns="http://www.mulesoft.org/schema/mule/core"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xmlns:spring="http://www.springframework.org/schema/beans"
+      xmlns:file="http://www.mulesoft.org/schema/mule/file"
+      xsi:schemaLocation="
+         http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+         http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/core/3.2/mule.xsd
+         http://www.mulesoft.org/schema/mule/file http://www.mulesoft.org/schema/mule/file/3.2/mule-file.xsd">
+
+    <!-- MULE-5011 empty config to avoid the hot deployment classloader choking on a missing config file -->
+
+	<file:connector name="input" autoDelete="false" pollingFrequency="5000" />
+
+	<file:connector name="output" outputAppend="false"/>
+
+	<flow name="copyFile">
+		<file:inbound-endpoint connector-ref="input" path="temp/src"/>
+		
+		<idempotent-message-filter idExpression="#[message.inboundProperties['originalFilename']]-#[message.inboundProperties['fileSize']]-#[message.inboundProperties['timestamp']]">
+			<in-memory-store entryTTL="120000" expirationInterval="1800000"/>
+		</idempotent-message-filter>
+
+		<file:outbound-endpoint connector-ref="output" path="temp/target"/>
+	</flow>
+	
+</mule>
