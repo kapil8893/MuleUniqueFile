@@ -8,7 +8,7 @@ Approach Taken:
 Approach Taken for Unit Testing:
 1. Mule must be running
 2. @Before executing the Test, the Test Case will write a file to the source location.
-3. The @Test, will first wait for 5 mins (equivalent to the polling interval), and then will try to read the files from the Target location.
+3. The @Test, will first wait for 10 mins (so that two polling intervals are passed), and then will try to read the files from the Target location.
 4. Here the file count having name starting from "TestFile" (with which the file was written in step 2) should be 1.
 
 Notes:

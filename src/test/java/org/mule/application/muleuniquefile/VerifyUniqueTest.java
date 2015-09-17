@@ -41,7 +41,7 @@ public class VerifyUniqueTest {
 	public void testMe() {
 
 		try {
-			Thread.sleep(300000);
+			Thread.sleep(600000);
 		} catch (InterruptedException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
