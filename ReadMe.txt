@@ -7,9 +7,9 @@ Approach Taken:
 
 Approach Taken for Unit Testing:
 1. Mule must be running
-2. @Before executing the Test, the Test Case will write a file to the source location.
-3. The @Test, will first wait for 10 mins (so that two polling intervals are passed), and then will try to read the files from the Target location.
-4. Here the file count having name starting from "TestFile" (with which the file was written in step 2) should be 1.
+2. The Test Case will first write a file to the source location.
+3. And then will first wait for 10 mins (so that two polling intervals are passed).
+4. And then will try to read the files from the Target location. Here the file count should be 1.
 
 Notes:
 1. Using File protocol instead of SFTP becuase of lack of SFTP server. Tried installing some tools on my windows machine like OpenSSH (Cygwin) and FreeSshd, but ran into issues with them. I am assuming that it should not be an issue.
