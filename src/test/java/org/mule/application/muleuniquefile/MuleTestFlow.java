@@ -1,6 +1,10 @@
 package org.mule.application.muleuniquefile;
 
 import java.io.File;
+import java.io.FileInputStream;
+import java.io.IOException;
+import java.io.InputStream;
+import java.util.Properties;
 
 import org.junit.Assert;
 import org.junit.BeforeClass;
@@ -11,7 +15,8 @@ import org.mule.tck.junit4.FunctionalTestCase;
 
 public class MuleTestFlow extends FunctionalTestCase {
 
-	private static final String ROOT_PATH = "C://MyData//Softwares//mule-standalone-3.7.0//mule-standalone-3.7.0//bin//temp//";
+	private static String srcPath;
+	private static String targetPath;
 
 	@Override
 	protected String[] getConfigFiles() {
@@ -20,7 +25,25 @@ public class MuleTestFlow extends FunctionalTestCase {
 
 	@BeforeClass
 	public static void setup() {
+		Properties prop = new Properties();
+		InputStream pathProp = null;
 		System.setProperty("mule.test.timeoutSecs", "700000");
+
+		try {
+			pathProp = new FileInputStream("src/main/resources/path.properties");
+			prop.load(pathProp);
+			srcPath = prop.getProperty("src.path");
+			targetPath = prop.getProperty("target.path");
+		} catch (Exception e) {
+			e.printStackTrace();
+		} finally {
+			try {
+				pathProp.close();
+			} catch (IOException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+		}
 	}
 
 	@Test
@@ -31,7 +54,7 @@ public class MuleTestFlow extends FunctionalTestCase {
 		// write file to source destination
 
 		try {
-			client.dispatch("file://" + ROOT_PATH + "src?connector=input", "Some Text File", null);
+			client.dispatch("file://" + srcPath + "?connector=input", "Some Text File", null);
 
 		} catch (MuleException e) {
 			// TODO Auto-generated catch block
@@ -50,7 +73,7 @@ public class MuleTestFlow extends FunctionalTestCase {
 		}
 
 		// verify file count at target location
-		File f = new File(ROOT_PATH + "target");
+		File f = new File(targetPath);
 
 		String arr[] = f.list();
 
