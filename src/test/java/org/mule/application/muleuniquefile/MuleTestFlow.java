@@ -3,6 +3,7 @@ package org.mule.application.muleuniquefile;
 import java.io.File;
 
 import org.junit.Assert;
+import org.junit.BeforeClass;
 import org.junit.Test;
 import org.mule.api.MuleException;
 import org.mule.api.client.MuleClient;
@@ -10,12 +11,16 @@ import org.mule.tck.junit4.FunctionalTestCase;
 
 public class MuleTestFlow extends FunctionalTestCase {
 
-	public static final String ROOT_PATH = "C://MyData//Softwares//mule-standalone-3.7.0//mule-standalone-3.7.0//bin//temp//";
+	private static final String ROOT_PATH = "C://MyData//Softwares//mule-standalone-3.7.0//mule-standalone-3.7.0//bin//temp//";
 
 	@Override
 	protected String[] getConfigFiles() {
-		// TODO Auto-generated method stub
 		return new String[] { "src/main/app/mule-config.xml" };
+	}
+
+	@BeforeClass
+	public static void setup() {
+		System.setProperty("mule.test.timeoutSecs", "700000");
 	}
 
 	@Test
